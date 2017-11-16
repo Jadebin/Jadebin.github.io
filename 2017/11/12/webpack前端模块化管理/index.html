@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>webpack前端模块化管理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="webpack–前端模块化管理webpack是什么？ Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Co">
+  <meta name="description" content="webpack–前端模块化管理webpack是什么？Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Cof">
 <meta property="og:type" content="article">
 <meta property="og:title" content="webpack前端模块化管理">
 <meta property="og:url" content="http://yoursite.com/2017/11/12/webpack前端模块化管理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="webpack–前端模块化管理webpack是什么？ Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Co">
-<meta property="og:updated_time" content="2017-11-12T07:37:44.089Z">
+<meta property="og:description" content="webpack–前端模块化管理webpack是什么？Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Cof">
+<meta property="og:updated_time" content="2017-11-16T12:29:21.713Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="webpack前端模块化管理">
-<meta name="twitter:description" content="webpack–前端模块化管理webpack是什么？ Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Co">
+<meta name="twitter:description" content="webpack–前端模块化管理webpack是什么？Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Cof">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -167,9 +167,75 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="webpack–前端模块化管理"><a href="#webpack–前端模块化管理" class="headerlink" title="webpack–前端模块化管理"></a>webpack–前端模块化管理</h1><pre><code>webpack是什么？
-</code></pre><p>Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Coffeescript、 LESS 等。</p>
+        <h1 id="webpack–前端模块化管理"><a href="#webpack–前端模块化管理" class="headerlink" title="webpack–前端模块化管理"></a>webpack–前端模块化管理</h1><h2 id="webpack是什么？"><a href="#webpack是什么？" class="headerlink" title="webpack是什么？"></a>webpack是什么？</h2><p>Webpack 是前端”模块化管理”和”打包工具”。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。还可以将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。通过 loader（重要） 的转换，任何形式的资源都可以视作模块，比如 CommonJs 模块、 AMD 模块、 ES6 模块、CSS、图片、 JSON、Coffeescript、 LESS 等。</p>
+<a id="more"></a>
+<h2 id="webpack入门"><a href="#webpack入门" class="headerlink" title="webpack入门"></a>webpack入门</h2><p><strong>1.全局安装webpack：</strong></p>
+<ul>
+<li>全局安装 npm i webpack@1.14.0  -g </li>
+<li>安装完成之后可以用webpack version进行测试。</li>
+</ul>
+<p><strong>2.本地安装：</strong></p>
+<ul>
+<li>全局安装相当于只装了webpack命令，如果需要在项目中使用，还需要进行本地安装。</li>
+<li>安装：npm i webpack@1.14.0 –save-dev  //安装稳定版本（大多都是最新版）</li>
+</ul>
+<p><strong>3.简单使用：</strong></p>
+<ul>
+<li><strong>1）新建项目（文件夹）</strong></li>
+<li>npm init  //初始化package.json包配置文件</li>
+<li><strong>2）本地安装</strong></li>
+<li>npm i webpack@1.14.0 –save-dev //保存到包配置文件中</li>
+<li><strong>3）新建模块</strong>  <pre>scripts 文件夹（命令任意）
+  a.js  
+  b.js
+  index.html
+  </pre></li>
+<li>在a.js 中导入b,并使用b模块。  <pre>var printMsg = require("./b")
+  printMsg("明天会更好")</pre></li>
+<li><strong>4）命令打包</strong></li>
+<li>目录cmd窗口输入：webpack a.js bundle.js</li>
+<li>a.js 主文件(入口文件，第一个被页面加载的文件）</li>
+<li>bundle.js 打包后的文件(文件内容包含a.js和a.js依赖的所有文件)</li>
+<li>–&gt;执行webpack命令</li>
+</ul>
+<p><strong>4.loader模块加载器</strong></p>
+<ul>
+<li>webpack原生仅支持JavaScript模块加载（require(‘/xxx.js’)），如果需要提供其他的模块加载器，那么我们就必须进行安装。</li>
+<li><strong>1）.style模块加载器</strong></li>
+<li>npm install css-loader style-loader –save-dev来安装这些loader</li>
+<li>使用模块加载器，你还需要在webpack.config.js中进行配置。<br><pre><br>var webpack = require(‘webpack’);<br>module.exports = {<br>//主文件<br>entry:”./scripts/a”,</pre></li>
+</ul>
+<p>//配置输出<br>output:{<br>    //输出的路径<br>    path:”static/“,<br>    //输出的文件名<br>    filename:”bundle.js”,<br>    //浏览器引用时的输出文件的公共URL地址<br>    publicPath:”/static/“,<br>    pathinfo:true<br>},</p>
+<p>//模块配置<br>module:{<br>    //模块加载器<br>    loaders:[<br>         {test: /.css$/, loader: ‘style-loader!css-loader’}<br>    ]<br>    }}</p>
+<ul>
+<li><strong>2). less模块加载器</strong></li>
+<li>less是CSS 预处理语言,使用less可以提高编写css效率，webpack中也可以对less模块加载。</li>
+<li>安装：npm install less-loader –save-dev<br><pre><br>//模块配置<br>module:{<br>  //模块加载器<br>  loaders:[<pre><code>.........
+</code></pre>   {test:/.less$/, loader: ‘style!css!less’}<br>  ]<br>}<br></pre><br><pre><br>styles/myless.less<br>@color: #00ff0f;</pre></li>
+</ul>
+<p>h1,h2{<br>    color: @color;<br>}</p>
+<p></p>
+<pre>
+scripts/a.js
 
+//导入myless.less模块。
+require("../styles/myless.less");
+</pre>
+* **3) url资源加载器**
+* url-loader对图片的加载器，将采用如果图片小可以采用base64（内嵌在js中）。
+<pre>
+ module:{
+      loaders:[
+          ........
+          {
+              test: /\.(jpg|png|gif)$/,
+              loader:'url?name=[path]/[name].[ext]&limit=8192'
+          }
+      ]
+  }
+limit 8192 代表图片小于8K就采用base64内嵌在模块中。
+name 生成文件的路径。
+</pre>
       
 
       
